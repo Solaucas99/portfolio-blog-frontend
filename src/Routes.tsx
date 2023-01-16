@@ -5,7 +5,7 @@ import Project from './Pages/Project';
 
 export function AppRoutes() {
   return (
-    <Router>
+    <Router basename="/portfolio-blog-frontend">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects/:id" element={<Project />} />
