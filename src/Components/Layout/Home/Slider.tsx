@@ -78,8 +78,8 @@ const BoxCard = styled('div', {
   cursor: 'pointer',
   marginBottom: '25px',
 
-  '@sm': { width: '200px', height: '250px' },
-  '@md': { width: '300px', height: '350px' },
+  '@sm': { width: '250px', height: '370px' },
+  '@md': { width: '350px', height: '400px' },
   '@lg': { width: '400px', height: '450px' },
 
   '&:hover div.imgBox img, &:active div.imgBox img': {
@@ -121,20 +121,20 @@ const ImgCard = styled('img', {
 
 const ContentBox = styled('div', {
   position: 'absolute',
-  bottom: '20px',
+  bottom: '25px',
   left: '10%',
   width: '80%',
-  height: '70px',
+  height: '90px',
   background: '$background',
   transition: '0.5s',
   overflow: 'hidden',
-  padding: '15px',
+  padding: '20px',
   boxSizing: 'border-box',
   color: '$textPrimary',
 
   '& div.description': {
     margin: '10px 0 0',
-    padding: '0',
+    padding: '5px',
     opacity: '0',
     lineHeight: '1.2em',
     transition: '0.5s',
@@ -143,13 +143,17 @@ const ContentBox = styled('div', {
     position: 'relative',
     height: '100%',
 
+    '@sm': { fontSize: '11px' },
+    '@md': { fontSize: '12px' },
+    '@lg': { fontSize: '13px' },
+
     '& button': {
       position: 'absolute',
       outline: 'none',
       background: 'transparent',
       color: '$textPrimary',
       padding: '10px',
-      bottom: '35px',
+      bottom: '40px',
       left: '5px',
       cursor: 'pointer',
       transition: 'all 0.3s ease-in-out',
